@@ -1,0 +1,36 @@
+[
+  {
+    "port_portid": "8457",
+    "port_porttype": "Type 2 AC Fast",
+    "port_portstatus": "BUSY",
+    "port_price": 0.55,
+    "port_priceunit": "$/kWh",
+    "locationid": 1715,
+    "name": "Shell Recharge Choa Chu Kang",
+    "address": "Shell Service Station, 20 Choa Chu Kang Drive ",
+    "zipcode": "689717",
+    "latitude": 1.385627,
+    "longitude": 103.746423,
+    "openingtimes_regularhours": "NONE",
+    "openingtimes_twentyfourseven": "NONE",
+    "openingtimes_exceptionalopenings": "NONE",
+    "openingtimes_exceptionalclosings": "NONE"
+  },
+  {
+    "port_portid": "8458",
+    "port_porttype": "Type 2 Combo",
+    "port_portstatus": "BUSY",
+    "port_price": 0.55,
+    "port_priceunit": "$/kWh",
+    "locationid": 1715,
+    "name": "Shell Recharge Choa Chu Kang",
+    "address": "Shell Service Station, 20 Choa Chu Kang Drive ",
+    "zipcode": "689717",
+    "latitude": 1.385627,
+    "longitude": 103.746423,
+    "openingtimes_regularhours": "NONE",
+    "openingtimes_twentyfourseven": "NONE",
+    "openingtimes_exceptionalopenings": "NONE",
+    "openingtimes_exceptionalclosings": "NONE"
+  }
+]

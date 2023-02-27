@@ -1,0 +1,20 @@
+{
+  "id": "313744932.320933",
+  "operatorId": "313744932",
+  "name": "StorHub Toa Payoh 615 Multi Storey",
+  "address": "615 Lorong 4 Toa Payoh, Singapore 319516",
+  "gisBd09Lat": 1.3387718410162606,
+  "gisBd09Lng": 103.85847128007761,
+  "gisGcj02Lat": 1.333056,
+  "gisGcj02Lng": 103.851955,
+  "dcTotalCnt": 0,
+  "acTotalCnt": 4,
+  "dcIdleCnt": 0,
+  "acIdleCnt": 4,
+  "serviceTime": "Weekdays: 00:00-23:59  Weekends: 00:00-23:59",
+  "serviceFee": "时间段:00:00-23:59,服务费:0.0",
+  "electricFee": "时间段:00:00-23:59,电价:0.5131",
+  "totalFee": "0.5131",
+  "stationStatus": 50,
+  "stationStatusTxt": "Normal"
+}

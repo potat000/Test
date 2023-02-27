@@ -1,0 +1,115 @@
+{
+  "entryId": "provided-customId",
+  "name":"entry_name",
+  "description":"entry_description",
+  "taskEntities": [
+    {
+      "type": "DeliveryItem",
+      "priority":1,
+      "items": [
+        {
+          "taskEntityId":"provided-customId",
+          "name":"item_1",
+          "description":"desc_1",
+          "weight": "30",
+          "length": "15",
+          "width": "10",
+          "height": "4",
+          "serialNumber": "ajf73281ryvfew80",
+          "picture":"a_byte_array?",
+          "measureUnit": 1
+        },
+        {
+          "taskEntityId":"provided-customId",
+          "name":"item_2",
+          "description":"desc_2",
+          "weight": "30",
+          "length": "15",
+          "width": "10",
+          "height": "4",
+          "serialNumber": "hdg81d723sgdgew80",
+          "picture":"a_byte_array?",
+          "measureUnit": 1
+        }
+      ],
+      "pickUp": {
+        "entityJourneyId": "sample_CustomId",
+        "contactPerson":"sample_name",
+        "contactNumber":"91836283",
+        "address1": "sample_address",
+        "address2": "sample_address",
+        "address3": "sample_address",
+        "postCode": "465783",
+        "coordinates_lat": "1.0123832",
+        "coordinates_lon": "103.32474"
+      },
+      "dropOff": {
+        "entityJourneyId": "sample_CustomId",
+        "contactPerson":"sample_name",
+        "contactNumber":"91836283",
+        "address1": "sample_address",
+        "address2": "sample_address",
+        "address3": "sample_address",
+        "postCode": "465783",
+        "coordinates_lat": "1.0123832",
+        "coordinates_lon": "103.32474"
+      },
+      "timeWindowStart": "2018-06-07T12:00:00.213",
+      "timeWindowEnd": "2018-06-07T18:00:00.321"
+
+    },
+    {
+      "type": "Service",
+      "priority":1,
+      "workers": [
+        {
+          "taskEntityId":"provided-customId",
+          "name":"item_1",
+          "description":"desc_1",
+          "workerName":"sample_name",
+          "workerNumber":"91836283",
+          "skillsRequired":[
+            1,2,3
+          ],
+          "carryOnEquipment":"ladder"
+        },
+        {
+          "taskEntityId":"provided-customId",
+          "name":"item_2",
+          "description":"desc_2",
+          "workerName":"sample_name",
+          "workerNumber":"91836283",
+          "skillsRequired":[
+            3
+          ],
+          "carryOnEquipment":"computer"
+        }
+      ],
+      "pickUp": {
+        "entityJourneyId": "sample_CustomId",
+        "contactPerson":"sample_name",
+        "contactNumber":"91836283",
+        "address1": "sample_address",
+        "address2": "sample_address",
+        "address3": "sample_address",
+        "postCode": "465783",
+        "coordinates_lat": "1.0123832",
+        "coordinates_lon": "103.32474"
+      },
+      "dropOff": {
+        "entityJourneyId": "sample_CustomId",
+        "contactPerson":"sample_name",
+        "contactNumber":"91836283",
+        "address1": "sample_address",
+        "address2": "sample_address",
+        "address3": "sample_address",
+        "postCode": "465783",
+        "coordinates_lat": "1.0123832",
+        "coordinates_lon": "103.32474"
+      },
+      "timeWindowStart": "2018-06-07T12:00:00.213",
+      "timeWindowEnd": "2018-06-07T18:00:00.321"
+
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.
+├── ./__init__.py
+├── ./asgi.py
+├── ./db.sqlite3
+├── ./local_settings.py
+├── ./settings
+│   ├── ./settings/__init__.py
+│   ├── ./settings/defaults.py
+│   ├── ./settings/dev.py
+│   ├── ./settings/old.py
+│   └── ./settings/prod.py
+├── ./settings.py ## to be deleted!
+├── ./storage.py
+├── ./urls.py
+└── ./wsgi.py
+
+3 directories, 24 files

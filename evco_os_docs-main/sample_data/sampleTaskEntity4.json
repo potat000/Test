@@ -1,0 +1,110 @@
+{
+  "name": "Joanne Lew",
+  "description": "tedty",
+  "tasklist": {
+    "1": {
+      "items": {
+        "1": {
+          "itemkey": "1",
+          "weight": "6",
+          "height": "15",
+          "length": "1",
+          "width": "2",
+          "dimensionMeasureUnit": 1,
+          "weightMeasureUnit": 1,
+          "serialNumber": "SN0001",
+          "picturePath":"uploads/deliveryItems/2022/12/29/508b4630b8a843d29910f3b1fa17a566.jpg",
+          "pictureUrl":"media/uploads/deliveryItems/2022/12/29/508b4630b8a843d29910f3b1fa17a566.jpg"
+        },
+        "2": {
+          "itemkey": "2",
+          "weight": "13",
+          "height": "12",
+          "length": "6",
+          "width": "6",
+          "dimensionMeasureUnit": 1,
+          "weightMeasureUnit": 1,
+          "serialNumber": "SN0002",
+          "picturePath":"uploads/deliveryItems/2022/12/29/b2940176ecba4296891b407c710007e0.png",
+          "pictureUrl":"media/uploads/deliveryItems/2022/12/29/b2940176ecba4296891b407c710007e0.png"
+        }
+      },
+      "itemcount": "2",
+      "taskkey": "1",
+      "tasktype": "delivery",
+      "priority": 1,
+      "startdate": "2022-12-25",
+      "starttime": "00:00",
+      "enddate": "2022-12-28",
+      "endtime": "00:00",
+      
+      "pickupaddr1": "Blk 89 Tanglin Halt Rd, #18-348",
+      "pickupaddr2": "",
+      "pickupaddr3": "",
+      "pickupcountry": 1,
+      "pickuppostal": "141089",
+      "pickupperson": "joanne",
+      "pickupcontact": "2222222",
+      "pickuplatlng": "103.74477751049918,1.352397061554221",
+
+      "dropoffaddr1": "Blk 89 Tanglin Halt Rd, #18-348",
+      "dropoffaddr2": "",
+      "dropoffaddr3": "",
+      "dropoffcountry": 1,
+      "dropoffpostal": "141089",
+      "dropoffperson": "HITOmi",
+      "dropoffcontact": "44444444",
+      "dropofflatlng": "103.8350084184134,1.339918997502632"
+    },
+    "2": {
+      "items": {
+        "1": {
+          "itemkey": "1",
+          "workerName":"jared",
+          "workerNumber":"91683738",
+          "skillsRequired":[
+            2,
+            3,
+            5
+          ],
+          "carryOnEquipment":"ladder"
+        },
+        "2": {
+          "itemkey": "2",
+          "workerName":"reina",
+          "workerNumber":"83639563",
+          "skillsRequired":[
+            3
+          ],
+          "carryOnEquipment":"clippers, fibre optic cable"
+        }
+      },
+      "itemcount": "2",
+      "taskkey": "2",
+      "tasktype": "service",
+      "priority": 1,
+      "startdate": "2023-01-12",
+      "starttime": "00:00",
+      "enddate": "2022-01-15",
+      "endtime": "00:00",
+      
+      "pickupaddr1": "Blk 88 Tanglin Halt Rd, #18-348",
+      "pickupaddr2": "",
+      "pickupaddr3": "",
+      "pickupcountry": 1,
+      "pickuppostal": "141089",
+      "pickupperson": "joanne",
+      "pickupcontact": "2222222",
+      "pickuplatlng": "103.74477751049918,1.352397061554221",
+
+      "dropoffaddr1": "Blk 89 Tanglin Halt Rd, #18-348",
+      "dropoffaddr2": "",
+      "dropoffaddr3": "",
+      "dropoffcountry": 1,
+      "dropoffpostal": "141089",
+      "dropoffperson": "HITOmi",
+      "dropoffcontact": "44444444",
+      "dropofflatlng": "103.8350084184134,1.339918997502632"
+    }
+  }
+}

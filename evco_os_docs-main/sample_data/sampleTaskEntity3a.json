@@ -1,0 +1,87 @@
+{
+  "entrytId": "taskid",
+  "list": [
+    {
+      "taskType": "DeliveryItem",
+      "taskcontent": {
+        "name": "sample_name",
+        "description": "sample_desc",
+        "taskEntityId": "sample_CustomId",
+        "pickUp": {
+          "entityJourneyId": "sample_CustomId",
+          "address1": "sample_address",
+          "address2": "sample_address",
+          "address3": "sample_address",
+          "postCode": "sample_postcode",
+          "coordinates_lat": "sample_lat",
+          "coordinates_lon": "sample_lon"
+        },
+        "dropOff": {
+          "entityJourneyId": "sample_CustomId",
+          "address1": "sample_address",
+          "address2": "sample_address",
+          "address3": "sample_address",
+          "postCode": "sample_postcode",
+          "coordinates_lat": "sample_lat",
+          "coordinates_lon": "sample_lon"
+        },
+        "priority": 1,
+        "contactPerson": "sample_name",
+        "contactNumber": "sample_number",
+        "timeWindowStart": "2018-06-07T00:00",
+        "timeWindowEnd": "2018-06-07T00:00",
+        "items":[ {
+		"length": "sample_length",
+        "width": "sample_width",
+		"weight": "sample_weight",
+        "height": "sample_height",
+        "serialNumber": "ajf73281ryvfew80",
+        "measureUnit": "box"
+		},{
+		"length": "sample_length",
+        "width": "sample_width",
+		"weight": "sample_weight",
+        "height": "sample_height",
+        "serialNumber": "ajf73281ryvfew90",
+        "measureUnit": "roll"
+		}
+		]
+      }
+    },
+    {
+      "type": "Service",
+      "taskcontent": {
+        "name": "sample_name",
+        "description": "sample_desc",
+        "taskEntityId": "sample_CustomId",
+        "pickUp": {
+          "entityJourneyId": "sample_CustomId",
+          "address1": "sample_address",
+          "address2": "sample_address",
+          "address3": "sample_address",
+          "postCode": "sample_postcode",
+          "coordinates_lat": "sample_lat",
+          "coordinates_lon": "sample_lon"
+        },
+        "dropOff": {
+          "entityJourneyId": "sample_CustomId",
+          "address1": "sample_address",
+          "address2": "sample_address",
+          "address3": "sample_address",
+          "postCode": "sample_postcode",
+          "coordinates_lat": "sample_lat",
+          "coordinates_lon": "sample_lon"
+        },
+        "priority": 1,
+        "contactPerson": "sample_name",
+        "contactNumber": "sample_number",
+        "timeWindowStart": "2018-06-07T00:00",
+        "timeWindowEnd": "2018-06-07T00:00",
+        "workerName": "sample_name",
+        "workerNumber": "sample_number",
+        "skillRequired": 1,
+        "carryOnEquipment": "sample_equipment"
+      }
+    }
+  ]
+}

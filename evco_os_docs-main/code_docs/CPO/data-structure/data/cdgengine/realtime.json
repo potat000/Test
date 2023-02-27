@@ -1,0 +1,572 @@
+{
+  "id": 98442,
+  "name": "Blk 261A Toa Payoh East",
+  "operatorName": "CDG Public",
+  "supportPhoneNumber": "+6568818383",
+  "locationReference": null,
+  "accessibility": "Free publicly accessible",
+  "openingTime": {
+    "twentyFourSeven": true,
+    "exceptionalOpenings": null,
+    "exceptionalClosings": null,
+    "regularHours": null
+  },
+  "latitude": 1.334146,
+  "longitude": 103.855389,
+  "icon": 0,
+  "address": "Deck 4A Lot 118, 119, 120",
+  "city": "Singapore",
+  "country": "SG",
+  "openHours": "24 hours",
+  "providers": "Virta",
+  "pictures": [
+    "https://b2bui-photo-uploads-production.s3-eu-west-1.amazonaws.com/85757/2691351651241795.jpg",
+    "https://b2bui-photo-uploads-production.s3-eu-west-1.amazonaws.com/85757/3178011651241800.jpg"
+  ],
+  "isV2G": false,
+  "eichrechtType": "None",
+  "termsAndConditionsUrlActingEmp": null,
+  "termsLink": "https://virta-customapp-prod.s3.amazonaws.com/cdgengie/CDG%20ENGIE%20TCs.pdf",
+  "brandedContent": {
+    "logo": null,
+    "color": null,
+    "brightElements": false
+  },
+  "isOwnedBySellerOfCustomer": false,
+  "evses": [
+    {
+      "id": 98442,
+      "connectors": [
+        {
+          "connectorID": 1,
+          "type": "Mennekes",
+          "maxKwh": 7.4,
+          "maxKw": 7.4,
+          "currentType": "AC",
+          "status": "Operative"
+        }
+      ],
+      "available": true,
+      "reservable": false,
+      "reserved": false,
+      "occupied": false,
+      "isV2G": false,
+      "currency": "SGD",
+      "pricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePayment": true,
+      "oneTimePaymentInAppEnabled": true,
+      "oneTimeAuthorizationholdAmountCents": 0,
+      "oneTimeAuthorizationholdCurrency": "SGD",
+      "status": 1,
+      "oneTimeMinimum": 0,
+      "oneTimePricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_hour",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePricingRatio": 1,
+      "minutesWithoutTimeCharge": 0,
+      "isFree": false,
+      "remoteAuthorization": true,
+      "evseId": "FI*001*E98442"
+    },
+    {
+      "id": 98443,
+      "connectors": [
+        {
+          "connectorID": 1,
+          "type": "Mennekes",
+          "maxKwh": 7.4,
+          "maxKw": 7.4,
+          "currentType": "AC",
+          "status": "Operative"
+        }
+      ],
+      "available": true,
+      "reservable": false,
+      "reserved": false,
+      "occupied": false,
+      "isV2G": false,
+      "currency": "SGD",
+      "pricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePayment": true,
+      "oneTimePaymentInAppEnabled": true,
+      "oneTimeAuthorizationholdAmountCents": 0,
+      "oneTimeAuthorizationholdCurrency": "SGD",
+      "status": 1,
+      "oneTimeMinimum": 0,
+      "oneTimePricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_hour",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePricingRatio": 1,
+      "minutesWithoutTimeCharge": 0,
+      "isFree": false,
+      "remoteAuthorization": true,
+      "evseId": "FI*001*E98443"
+    },
+    {
+      "id": 98444,
+      "connectors": [
+        {
+          "connectorID": 1,
+          "type": "Mennekes",
+          "maxKwh": 7.4,
+          "maxKw": 7.4,
+          "currentType": "AC",
+          "status": "Operative"
+        }
+      ],
+      "available": true,
+      "reservable": false,
+      "reserved": false,
+      "occupied": false,
+      "isV2G": false,
+      "currency": "SGD",
+      "pricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePayment": true,
+      "oneTimePaymentInAppEnabled": true,
+      "oneTimeAuthorizationholdAmountCents": 0,
+      "oneTimeAuthorizationholdCurrency": "SGD",
+      "status": 1,
+      "oneTimeMinimum": 0,
+      "oneTimePricing": [
+        {
+          "name": "price_per_kwh",
+          "priceCents": 56,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 56,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_per_hour",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_initial_charge_fee",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        },
+        {
+          "name": "price_reservation_per_minute",
+          "priceCents": 0,
+          "currency": "SGD",
+          "priceCentsWithoutVat": 0,
+          "priceCentsVat": 0,
+          "freePeriod": null,
+          "timePeriod": null,
+          "days": {
+            "1": true,
+            "2": true,
+            "3": true,
+            "4": true,
+            "5": true,
+            "6": true,
+            "7": true
+          }
+        }
+      ],
+      "oneTimePricingRatio": 1,
+      "minutesWithoutTimeCharge": 0,
+      "isFree": false,
+      "remoteAuthorization": true,
+      "evseId": "FI*001*E98444"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+./evco_os_deploy
+├── default # original
+│   ├── .env
+│   ├── docker-compose.yml
+├── testcompany # created by you
+│   ├── .env
+│   ├── docker-compose.yml
+├── testcompany2 # as many as you want
+│   ├── .env
+│   ├── docker-compose.yml
+├── testcompany3 # just make sure you have enough RAM in the VM
+│   ├── .env
+│   ├── docker-compose.yml
+├── evco_os
+│   ├── .dockerignore
+│   ├── docker-compose.yml
+│   ├── dockerfile
+│   ├── evcoos
+│   ├── requirements.txt
+│   ├── requirements.txt.old
+│   ├── requirements.txt.ubuntu
+│   ├── requirements_test.txt
+│   ├── module1
+│   ├── module2
+│   ├── and_more...

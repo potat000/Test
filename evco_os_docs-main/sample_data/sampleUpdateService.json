@@ -1,0 +1,41 @@
+{
+	"taskkey":"1",
+	"priority":"0",
+	"timeWindowStart":"2023-01-10T16:00:00.000Z",
+	"timeWindowEnd":"2023-01-12T16:00:00.000Z",
+	"dropoff":{
+		"taskentity_ptr_id":"2",
+		"address1":"Blk 88 Tanglin Halt Rd, #18-348",
+		"address2":"",
+		"address3":"",
+		"postCode":"141088",
+		"countryPk":"1",
+		"coordinates_lat":"1.3012044",
+		"coordinates_lng":"103.798857",
+		"contactPerson":"Joanne Lew",
+		"contactNumber":"96348303",
+		"entityJourneyId":"task_entityjourney#000000000005",
+		"JourneyType":1
+	},
+	"pickup":{
+		"taskentity_ptr_id":"2",
+		"address1":"Blk 89 Tanglin Halt Rd, #18-348",
+		"address2":"",
+		"address3":"",
+		"postCode":"141089",
+		"countryPk":"1",
+		"coordinates_lat":"1.3012044",
+		"coordinates_lng":"103.798857",
+		"contactPerson":"Joanne Lew",
+		"contactNumber":"96348303",
+		"entityJourneyId":"task_entityjourney#000000000004",
+		"JourneyType":0
+	},
+	"service":{
+		"taskentity_ptr_id":"2",
+		"workerName":"Arthur",
+		"workerNumber":"222222",
+		"carryOnEquipment":"screwdriver",
+		"skillsRequired":[2,3]
+	}	
+}

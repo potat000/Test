@@ -1,0 +1,46 @@
+{
+  "taskkey": "1",
+  "taskentity_ptr_id": "1",
+  "priority": "0",
+  "timeWindowStart": "2023-01-10T16:00:00.000Z",
+  "timeWindowEnd": "2023-01-12T16:00:00.000Z",
+  "deliveryitem": {
+    "serialNumber": "SN0001",
+    "width": "1.00",
+    "height": "1.00",
+    "weight": "1.00",
+    "length": "1.00",
+    "dimensionMeasureUnit_id": null,
+    "weightMeasureUnit_id": null,
+    "pictureUrl": "/media/uploads/deliveryItems/2023/01/09/2468f99561664fdf82c15e53897cc688.png",
+    "picturePath": "uploads/deliveryItems/2023/01/09/2468f99561664fdf82c15e53897cc688.png"
+  },
+  "pickup": {
+    "taskentity_ptr_id": "1",
+    "address1": "Blk 89 Tanglin Halt Rd, #18-348",
+    "address2": "",
+    "address3": "",
+    "postCode": "141089",
+    "countryPk": "1",
+    "coordinates_lat": "1.3012044",
+    "coordinates_lng": "103.798857",
+    "contactPerson": "Joanne Lew",
+    "contactNumber": "96348303",
+    "entityJourneyId": "task_entityjourney#000000000001",
+    "JourneyType": 0
+  },
+  "dropoff": {
+    "taskentity_ptr_id": "1",
+    "address1": "Blk 88 Tanglin Halt Rd, #18-348",
+    "address2": "",
+    "address3": "",
+    "postCode": "141088",
+    "countryPk": "1",
+    "coordinates_lat": "1.3022366",
+    "coordinates_lng": "103.7976957",
+    "contactPerson": "Hitomi",
+    "contactNumber": "62414534",
+    "entityJourneyId": "task_entityjourney#000000000002",
+    "JourneyType": 1
+  }
+}

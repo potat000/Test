@@ -1,0 +1,107 @@
+{
+  "name": "test entry",
+  "description": "testing",
+  "tasklist": {
+    "1": {
+      "items": {
+        "1": {
+          "itemkey": "1",
+          "weight": "500",
+          "height": "80",
+          "length": "30",
+          "width": "10",
+          "dimensionMeasureUnit": "1",
+          "weightMeasureUnit": "1",
+          "serialNumber": "SN0001",
+          "pictureurl": "/media/uploads/deliveryItems/2023/01/05/19fc5cff6f75481a932f793a6d13b444.png",
+          "picturepath": "uploads/deliveryItems/2023/01/05/19fc5cff6f75481a932f793a6d13b444.png"
+        },
+        "2": {
+          "itemkey": "2",
+          "weight": "1.3",
+          "height": "0.4",
+          "length": "0.3",
+          "width": "0.5",
+          "dimensionMeasureUnit": "2",
+          "weightMeasureUnit": "2",
+          "serialNumber": "SN0002",
+          "pictureurl": "/media/uploads/deliveryItems/2023/01/05/entry_task_item20221230110010_dropoff.png",
+          "picturepath": "uploads/deliveryItems/2023/01/05/entry_task_item20221230110010_dropoff.png"
+        }
+      },
+      "itemcount": "2",
+      "taskkey": "1",
+      "tasktype": "delivery",
+      "priority": "0",
+      "startdate": "2023-01-06",
+      "starttime": "00:00",
+      "enddate": "2023-01-19",
+      "endtime": "00:00",
+      "pickupaddr1": "69 Seng Poh Lane, #01-02",
+      "pickupaddr2": "",
+      "pickupaddr3": "",
+      "pickuppostal": "160069",
+      "pickupcountry": "1",
+      "pickuplatlng": "103.798857 ,1.3012044",
+      "pickupperson": "marcus",
+      "pickupcontact": "91865342",
+      "dropoffaddr1": "Blk 88 Tanglin Halt Rd,#18-348",
+      "dropoffaddr2": "",
+      "dropoffaddr3": "",
+      "dropoffpostal": "141088",
+      "dropoffcountry": "1",
+      "dropofflatlng": "103.7976957 ,1.3022366",
+      "dropoffperson": "HITOmi",
+      "dropoffcontact": "434343434343"
+    },
+    "2": {
+      "items": {
+        "1": {
+          "itemkey": "1",
+          "workerName": "james",
+          "workerNumber": "948303443",
+          "skillsRequired": [
+            "1",
+            "2",
+            "5"
+          ],
+          "carryOnEquipment": "ladder, toolbox"
+        },
+        "2": {
+          "itemkey": "2",
+          "workerName": "arthur",
+          "workerNumber": "848310323",
+          "skillsRequired": [
+            "2",
+            "3"
+          ],
+          "carryOnEquipment": "screwdriver, cable cutter, ladder"
+        }
+      },
+      "itemcount": "1",
+      "taskkey": "2",
+      "tasktype": "service",
+      "priority": "1",
+      "startdate": "2023-01-06",
+      "starttime": "00:00",
+      "enddate": "2023-01-19",
+      "endtime": "00:00",
+      "pickupaddr1": "71 Seng Poh Road, #01-37",
+      "pickupaddr2": "",
+      "pickupaddr3": "",
+      "pickuppostal": "160071",
+      "pickupcountry": "1",
+      "pickuplatlng": "103.7976957 ,1.3022366",
+      "pickupperson": "art",
+      "pickupcontact": "2222222",
+      "dropoffaddr1": "Blk 89 Tanglin Halt Rd, #18-348",
+      "dropoffaddr2": "",
+      "dropoffaddr3": "",
+      "dropoffpostal": "141089",
+      "dropoffcountry": "1",
+      "dropofflatlng": "103.798858 , 1.3012045",
+      "dropoffperson": "HITOmi",
+      "dropoffcontact": "434343434343"
+    }
+  }
+}

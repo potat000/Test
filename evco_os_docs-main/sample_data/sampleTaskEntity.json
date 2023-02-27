@@ -1,0 +1,72 @@
+{
+    [
+        "Service": {
+            "name":"sample_name", // string
+            "description" :"sample_desc", // string
+            "taskEntityId":"sample_CustomId", // string, generated and provided on call of api
+            "pickUp":{
+                "entityJourneyId":"sample_CustomId", // string, generated and provided on call of api,
+                "address1":"sample_address", // string,
+                "address2":"sample_address", // string,,
+                "address3":"sample_address", // string,,
+                "postCode":"sample_postcode", // string,,
+                "coordinates_lat":"sample_lat", // decimal/float,
+                "coordinates_lon":"sample_lon", // decimal/float,    
+            },
+            "dropOff":{
+                "entityJourneyId":"sample_CustomId", // string, generated and provided on call of api,
+                "address1":"sample_address", // string,
+                "address2":"sample_address", // string,,
+                "address3":"sample_address", // string,,
+                "postCode":"sample_postcode", // string,,
+                "coordinates_lat":"sample_lat", // decimal/float,
+                "coordinates_lon":"sample_lon", // decimal/float,    
+            },
+            "priority": 1, // integerChoice, will be provided as variable in template to loop through
+            "contactPerson":"sample_name", // string
+            "contactNumber":"sample_number", // string,
+            "timeWindowStart":"2018-06-07T00:00", // <input type ="datetime-local">
+            "timeWindowEnd":"2018-06-07T00:00", // <input type ="datetime-local">,
+            "workerName":"sample_name", // string,
+            "workerNumber":"sample_number", // string,,
+            "skillRequired" : 1, // choice also, will be provided as key/value tuple in template to loop through but selected value is pk in model
+            "carryOnEquipment":"sample_equipment", // more compledx next time
+        },
+        "DeliveryItem":{
+            "name",
+            "description",
+            "taskEntityId",
+            "pickUp":{
+                "entityJourneyId":"sample_CustomId", // string, generated and provided on call of api,
+                "address1":"sample_address", // string,
+                "address2":"sample_address", // string,,
+                "address3":"sample_address", // string,,
+                "postCode":"sample_postcode", // string,,
+                "coordinates_lat":"sample_lat", // decimal/float,
+                "coordinates_lon":"sample_lon", // decimal/float,    
+            },
+            "dropOff":{
+                "entityJourneyId":"sample_CustomId", // string, generated and provided on call of api,
+                "address1":"sample_address", // string,
+                "address2":"sample_address", // string,,
+                "address3":"sample_address", // string,,
+                "postCode":"sample_postcode", // string,,
+                "coordinates_lat":"sample_lat", // decimal/float,
+                "coordinates_lon":"sample_lon", // decimal/float,    
+            },
+            "priority": 1, // integerChoice, will be provided as variable in template to loop through
+            "contactPerson":"sample_name", // string
+            "contactNumber":"sample_number", // string,
+            "timeWindowStart":"2018-06-07T00:00", // <input type ="datetime-local">
+            "timeWindowEnd":"2018-06-07T00:00", // <input type ="datetime-local">,
+            "weight":"sample_weight", // float,
+            "length":"sample_length", // float,,
+            "width":"sample_width", // float,,
+            "height":"sample_height", // float,,
+            "serialNumber",:"ajf73281ryvfew80" // string
+            // "picture":"", // unconfirmed exclude for now
+            "measureUnit":1,// integerChoice, will be provided as variable in template to loop through
+        },
+        // many more
+    ]
+}
