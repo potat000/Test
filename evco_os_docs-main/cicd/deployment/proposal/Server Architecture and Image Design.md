@@ -1,13 +1,11 @@
 # Server Architecture and Image Design
-___
 This chapter describes how the process structure on our Server manage the running container through systemd and monit. And how to use s6 as PID 1 to manage the processes in the container, these processes include WSGI server, Rsyslog, Cron, etc.
 
-When an external HTTP request comes in, nginx managed by systemd is can redirect the request into the container, and the request will be processed by the WSGI server inside the container.
+When an external HTTP request comes in, nginx managed by systemd can redirect the request into the container, and the request will be processed by the WSGI server inside the container.
 
 Since the architecture design of Image is independent of each layer, and a self-installation script is added, the Image can be installed and managed by itself. The following will illustrate the usage and architecture design.
 
 ## Components Used by the Process Structure
-___
 ### Architecture Diagram
 The figure below shows the process management structure of the Server managed by nuwa.
 
@@ -29,7 +27,7 @@ It can be simply divided into four categories of components: Systemd, Nginx, Rsy
   - s6-svscanctl: send instructions to the executing s6-svscan.  
 - **Systemd vs. s6 (lightweight tradeoff)**  
 
-  |           | Systed                                                    | s6                 |
+  |           | Systemd                                                   | s6                 |
   | ----------| --------------------------------------------------------- | ------------------ |
   | function  | process management, <br>log management, periodical tasks  | process management |
   | property  | large and complex                                         | small and simple   |
@@ -45,7 +43,7 @@ Nginx is an open-source asynchronous framework web server that can be used for r
 Although there is already a standard log management system, SysLog, on Linux, its features are unable to meet the needs of users as time goes by. As a result, the new log management was born, such as Rsyslog and Syslog-ng. Now we use Rsyslog for log integration and management within the container in our company.
 
 ### Cron (periodical job scheduler)
-Cron is a job scheduler under Unix-like systems, which can be used to initiate periodic detection tasks or tasks at specified time points. Currently in our company., it is mainly used to maintain the time validity of the SSL certificate and to automatically reapply for the SSL certificate periodically on the server. And in the container, the programs that need to be scheduled regularly are defined by app.  
+Cron is a job scheduler under Unix-like systems, which can be used to initiate periodic detection tasks or tasks at specified time points. Currently in our company, it is mainly used to maintain the time validity of the SSL certificate and to automatically reapply for the SSL certificate periodically on the server. And in the container, the programs that need to be scheduled regularly are defined by app.  
 ![](./images/cron.png)
 
 ### (Apache + mod_wsgi) & Gunicorn (WSGI Server)
@@ -58,12 +56,11 @@ As above, we can know that in order to reduce the size of container, we replace 
 ![](./images/process_tree.png)
 
 ## Image Design
-___
 ### Tutorial
 1. Create folders in any paths with enough storage space to store the volumes mounted by Container.
 1. `export BID= [image id]`, set image id as local variable (can be checked with `podman ps`).
 1. ```bash -c "`podman inspect -f '{{json .Config.Labels}}' $BID |jq -r '.[\"Setup\"]'`"```, a bin folder will be generated under the folder after this command, and all shell scripts are stored in this folder. This complex command can be seen in Label RunSetup through `podman inspect [image id]` directly. As result, anyone get this Image can install it by himself.
-1. `bin/run` to activate container in the created folder. (do not cd into bin and other locations).
+1. `bin/run` to activate container in the created folder. (Do not cd into bin and other locations).
 1. Next, `bin/install`, the nginx configuration of container will be installed, so that the worldwide users can connect to the service. The above are installation steps.
 1. If you want to remove the container, execute `bin/uninstall` to remove the configuration of the container in the same path as above.
 1. And `bin/kill` to remove the container and the bound service (e.g., monit). These two steps are about how to remove the container.
@@ -100,34 +97,3 @@ Pre-encapsulated Commands are shell scripts which is consist of routine complex 
   First, export volumes as a tar. Then, add permission list and unpack commands in to tar, and gzip to compress the file size. After that, users can transmit the volumes to the remote host through ssh or other network transmission protocols such as scp.
 - **others**  
   There are also other commands, such as get_bid (get Image ID), get_cid (get Container ID) and _predicate (environment check). For details, you can see the bin folder which unpack from Image.
-
-## EPEL
-___
-<https://blog.csdn.net/weixin_41831919/article/details/109035936>
-
-<https://ithelp.ithome.com.tw/articles/10300754>
-
-<https://www.zhihu.com/question/297267614>
-
-<https://medium.com/@eric248655665/%E4%BB%80%E9%BA%BC%E6%98%AF-wsgi-%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E7%94%A8-wsgi-f0d5f3001652>
-
-<https://www.zhihu.com/question/35540397>
-
-<https://zh-tw.tenable.com/plugins/nessus/82126>
-
-<https://github.com/twtrubiks/docker-django-nginx-uwsgi-postgres-tutorial>
-
-<https://dreampuf.github.io/GraphvizOnline/>
-
-<https://prasad-k-pawar.medium.com/get-started-with-cron-jobs-linux-617a1c5cc26a>
-
-<https://linuxhandbook.com/nginx-reverse-proxy-docker/>
-
-<https://vicxu.medium.com/web-server-and-application-server-5a6d9c940eff>
-
-<https://achievement.com.sg/view_blog.php?bgid=49&title=Web-server-vs-Application-server,-What%27s-the-difference?>
-
-<https://www.linuxprobe.com/linux-rsyslog-system.html>
-
-<https://medium.com/@federicodeicas/how-to-setup-your-server-with-freenom-tk-82c7302bcce4>
-
