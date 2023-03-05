@@ -1,0 +1,232 @@
+.title{
+    color: #4d4d4d;
+    font-size: 24px;
+}
+
+.navbar{
+    background-color: #f8f8f8;
+    width: 100%;
+    top: 0;
+    position: sticky;
+}
+
+ul.navbar-nav a{
+    color: #4d4d4d;
+    padding: 9px 15px 9px 15px;
+    text-decoration: none;
+}
+
+ul.navbar-nav a:hover{
+    color: #0080FF;
+}
+
+.navbar-nav li:hover > ul { /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+.navbar-nav li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+    color: #0080FF;
+}
+
+.navbar-nav.ml-auto{
+    margin-right: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    table-layout: fixed; /* */
+    width: 100%;
+    border: hidden;
+
+    margin: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+thead tr th {
+ position:sticky;
+ top:0;
+}
+
+td{
+    height: 50px;
+}
+
+th{
+    height: 50px;
+    z-index:2;
+    background-color: #7abdff;
+}
+
+tbody tr:hover{
+    background-color: #f8f8f8;
+    z-index:2;
+}
+
+.content{
+    margin: 20px;
+    text-align: center;
+     overflow:auto;
+     height:600px;
+}
+
+.formGroup{
+    background-color: #f8f8f8;
+    text-align: center;
+    display: inline-block;
+}
+
+form{
+    display: inline;
+    height: 30px;
+}
+
+input[type=submit], input[type=button], button {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #7abdff;
+}
+
+input[type=button]:hover {
+    background-color: #7abdff;
+}
+
+button:hover {
+    background-color: #7abdff;
+}
+
+span{
+    color: #4d4d4d;
+    background-color: #7abdff;
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #7abdff;
+    margin: 20px;
+    margin-right: 0;
+    float: left;
+    height: 40px;
+    padding: 5px 10px 5px;
+}
+
+.formGroup input[type=text], input[type=password], input[type=number], select {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #7abdff;
+    margin: 20px;
+    margin-left: -3px;
+    float: left;
+    height: 40px;
+    padding: 5px 10px 5px;
+}
+
+.formGroup input[type=submit]{
+    /*margin-left: 76%;*/
+    text-align: center;
+}
+
+.searchGroup input[type=text] {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    float: left;
+    height: 40px;
+}
+
+.searchGroup input[type=submit]{
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: -8px;
+    float: left;
+    height: 40px;
+}
+
+.searchGroup input[type=submit]:hover {
+    background-color: #7abdff;
+}
+
+.conditionGroup span {
+    color: #4d4d4d;
+    background-color: #7abdff;
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    float: left;
+    height: 40px;
+}
+
+.conditionGroup select {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    float: left;
+    height: 40px;
+}
+
+.conditionGroup input[type=submit]{
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #7abdff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: -8px;
+    float: left;
+    height: 40px;
+    padding: 3px 10px 3px;
+}
+
+.conditionGroup input[type=submit]:hover {
+    background-color: #7abdff;
+}
+
+input[type=text]:read-only{
+    background-color: #f8f8f8;
+}
+
+input.grade {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #7abdff;
+    height: 40px;
+    padding: 5px 10px 5px;
+}
+
+.percentage {
+    color: #4d4d4d;
+    background-color: #ffffff;
+    border-radius: 0 12px 12px 0;
+    border: 2px solid #7abdff;
+    margin: 20px;
+    margin-left: -3px;
+    float: left;
+    height: 40px;
+    padding: 5px 10px 5px;
+}
+
+tr.htmx-swapping td {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}

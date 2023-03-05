@@ -1,0 +1,90 @@
+{% extends "Layout.html" %}
+{% block title %}學生成績與排名{% endblock %}
+{% block content %}
+    <div class="content">
+      <p class="title"><b> 學生成績與排名 </b><p>
+      <div class="conditionGroup">
+          <form action="{% url 'studentGrade' %}" method="get">
+            <span>入學年分</span>
+            <select name = "enrolledYear" id="enrolledYear">
+	            {% for year in yearList %}
+	                <option value={{ year }}>{{ year }}</option>
+	            {% endfor %}
+            </select>
+            <span>學期</span>
+            <select name = "semester" id="semester">
+                {% for semester in semesterList %}
+                    <option value={{ semester }}>{{ semester }}</option>
+                {% endfor %}
+            </select>
+            <span>考試</span>
+            <select name = "exam" id="exam">
+                {% for exam in examList %}
+                    <option value={{ exam.name }}>{{ exam.name }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="搜尋">
+          </form>
+      </div>
+      <table border="1" style="border-width: 1px; border-collapse: collapse; text-align: center">
+          <thead>
+              <tr>
+                <th>排名</th>
+                <th>姓名</th>
+                <th>班級</th>
+                <th id="chinese">國文分數</th>
+                <th>英文分數</th>
+                <th>數學分數</th>
+                <th id="avg">平均</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for studentGrade in studentGradeList %}
+              <tr>
+	              {% for data in studentGrade %}
+	              <td>{{ data }}</td>
+	              {% endfor %}
+              </tr>
+              {% endfor %}
+              <tr style="font-weight: Bold; border: solid thin;">
+                  <td colspan="3">平均</td>
+                  {% for avg in averageList %}
+                    {% if avg.avg != None %}
+                        {% if avg.avg < 60 %}
+                           <td style="color:red;"> {{ avg.avg | floatformat:2 }} </td>
+                        {% else %}
+                           <td> {{ avg.avg | floatformat:2 }} </td>
+                        {% endif %}
+                    {% else %}
+                        <td style="color:red;"> 0.00 </td>
+                    {% endif %}
+                  {% endfor %}
+                  {% if totalAvg < 60 %}
+                      <td style="color:red;"> {{ totalAvg | floatformat:2 }} </td>
+		          {% else %}
+		              <td> {{ totalAvg | floatformat:2 }} </td>
+		          {% endif %}
+              </tr>
+          </tbody>
+      </table>
+      <p><button onclick="history.back()">返回</button></p>
+    </div>
+
+    <script>
+    $("#chinese").click(function(){
+    	$.ajax({
+            url: "{% url 'sortByChineseGrade' %}",
+            type: 'GET',
+            datatype: 'json',
+            data: {
+                "enrolledYear": $("#enrolledYear").val(),
+                "semester": $("#semester").val(),
+                "exam": $("#exam").val()
+            },
+            success: function(data){
+                $("tbody").replaceWith(data);
+            }
+        });
+    })
+    </script>
+{% endblock %}

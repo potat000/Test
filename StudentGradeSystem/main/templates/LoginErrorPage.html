@@ -1,0 +1,17 @@
+{% extends "Layout.html" %}
+{% block title %}Login{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-expand-xxl static-top">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="{% url 'login' %}"><input style="margin:0" type="button" value="Login"></a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <p class="title"><b> {{ errorMessage }} </b></p>
+        <button onclick="history.back()">返回</button>
+    </div>
+{% endblock %}
