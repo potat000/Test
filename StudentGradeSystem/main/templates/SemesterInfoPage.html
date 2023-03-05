@@ -1,0 +1,41 @@
+{% extends "Layout.html" %}
+{% block title %}學期資訊{% endblock %}
+{% block content %}
+    <div class="content">
+      <p class="title"><b> 學期資訊 </b><p>
+      <p align="right"><a href="{% url 'createSemester' %}"><input type="button" value="建立學期"></a></p>
+      <table border="1" style="border-width: 1px; border-collapse: collapse; text-align: center; width: 30%">
+          <thead>
+              <tr>
+                <th>名稱</th>
+                <th>功能</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for semester in semesterList %}
+              <tr>
+                  {% if semester.isCurrent == True %}
+                  <td style="color:orange;">{{semester.name}}</td>
+                  <td>
+                      <form action="{% url 'setCurrentSemester' semesterID=semester.id %}" method="get">
+                          <input type="submit"  style="background-color: #7abdff;" value="當前學期" disabled>
+                      </form>
+                  </td>
+                  {% else %}
+                  <td>{{semester.name}}</td>
+                  <td>
+                      <form action="{% url 'setCurrentSemester' semesterID=semester.id %}" method="get">
+                          <input type="submit" value="設為當前學期">
+                      </form>
+                      <form action="{% url 'deleteSemester' semesterID=semester.id %}" method="get">
+                          <input type="submit" value="刪除">
+                      </form>
+                  </td>
+                  {% endif %}
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+      <p><button onclick="history.back()">返回</button></p>
+    </div>
+{% endblock %}

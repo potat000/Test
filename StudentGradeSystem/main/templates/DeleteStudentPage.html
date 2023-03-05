@@ -1,0 +1,26 @@
+{% extends "Layout.html" %}
+{% block title %}刪除學生{% endblock %}
+{% block content %}
+    <div class="content">
+        <p class="title"><b> 刪除學生 </b><p>
+        <p>
+	        <form action="{% url 'deleteStudent' studentID=student.id %}" method="post">
+	            <div class="formGroup" style="width:30%">
+                    <br>ID: {{ student.id }}<input type="hidden" name="studentID" value={{ student.id }} readonly></br>
+                    <br>使用者名稱： {{ student.username }}</br>
+                    <br>姓名： {{ student.name }}</br>
+                    <br>手機號碼： {{ student.phoneNumber }}</br>
+                    {% if user.groups.first.id == user.DIRECTOR %}
+                        <br>班級： {{ student.clazz }}</br>
+                    {% elif user.groups.first.id == user.TEACHER %}
+                        <br>身分： {{ student.groups.first }}</br>
+                    {% endif %}
+                    <p></p>
+                </div>
+        </p>
+                <p><b class="title">你確定要刪除此位學生嗎？</b></p>
+                <input type="submit" value="刪除">
+            </form>
+        <button onclick="history.back()">返回</button>
+    </div>
+{% endblock %}

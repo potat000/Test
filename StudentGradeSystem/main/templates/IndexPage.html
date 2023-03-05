@@ -1,0 +1,18 @@
+{% extends "Layout.html" %}
+{% block title %}HW13{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-expand-xxl static-top">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="{% url 'login' %}"><input style="margin:0" type="button" value="Login"></a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+  <h1 style="margin:20px">Please login FIRST!!!</h1>
+  <div class="background">
+    {% load static %}
+    <img src="{% static 'Homepage.jpg' %}" width="100%" height="100%">
+  </div>
+{% endblock %}
