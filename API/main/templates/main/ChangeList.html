@@ -1,0 +1,113 @@
+{% extends 'admin/change_list.html' %}
+{% load i18n admin_list admin_urls static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{% endblock %}
+
+
+{% block content %}
+<div id="content-main">
+  {% block object-tools %}
+      <ul class="object-tools">
+        {% block object-tools-items %}
+          {% if has_add_permission %}
+          <li>
+            {% url cl.opts|admin_urlname:'add' as add_url %}
+            <a href="{% add_preserved_filters add_url is_popup to_field %}?r={{ request.path }}" class="addlink">
+              {% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}
+            </a>
+          </li>
+          {% endif %}
+        {% endblock %}
+      </ul>
+  {% endblock %}
+  {% if cl.formset.errors %}
+      <p class="errornote">
+      {% if cl.formset.total_error_count == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+      </p>
+      {{ cl.formset.non_form_errors }}
+  {% endif %}
+
+  <div class="module{% if cl.has_filters %} filtered{% endif %}" id="changelist">
+    <div class="changelist-form-container">
+      {% block search %}{% search_form cl %}{% endblock %}
+      {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
+
+      <form id="changelist-form" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %} novalidate>{% csrf_token %}
+      {% if cl.formset %}
+        <div>{{ cl.formset.management_form }}</div>
+      {% endif %}
+
+      {% block result_list %}
+          {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
+          {% result_list cl %}
+          {% if action_form and actions_on_bottom and cl.show_admin_actions %}{% admin_actions %}{% endif %}
+      {% endblock %}
+      {% block pagination %}{% pagination cl %}{% endblock %}
+      </form>
+    </div>
+    {% block filters %}
+      {% if cl.has_filters %}
+        <div id="changelist-filter">
+          <h2>{% trans 'Filter' %}</h2>
+          {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
+
+  <script>
+    $(document).ready(function(){
+        $(".field-actionButtons .actionForm").each(function(){
+            var $data = $(this);
+            var $form = $("<form></form>");
+            $form.attr("action", $data.attr("action"));
+            $form.attr("method", $data.attr("method"));
+            $form.html($data.html());
+            $data.replaceWith($form);
+        })
+
+        function getState(){
+            var breadcrumbs = $(".breadcrumbs").text();
+
+            if (breadcrumbs.indexOf("Deploys") > 0){
+                var model = "deploy"
+            } else if (breadcrumbs.indexOf("Builds") > 0){
+                var model = "build"
+            } else {
+                return
+            }
+
+            var ids = [];
+            $("#result_list .action-select").each(function(){
+                ids.push($(this).val());
+            })
+            ids = ids.join(",")
+
+            $.ajax({
+                url: "{% url 'status' %}",
+                type: 'POST',
+                data: {
+                    'ids': ids,
+                    'model': model
+                },
+                success: function(data){
+                    for (var key in data){
+                        var value = data[key];
+                        if (value == 'Processing' || value == 'Testing'){
+                            $("#result_list .action-select[value=\"" + key + "\"]").parent().parent().find(".field-status").html(value + "<img src='{% static 'images/Spinner-1s-51px.gif' %}' />");
+                        } else {
+                            $("#result_list .action-select[value=\"" + key + "\"]").parent().parent().find(".field-status").html(value);
+                        }
+                    }
+                },
+            });
+        }
+        getState();
+        timeoutID = window.setInterval(getState, 3000);
+    });
+  </script>
+</div>
+{% endblock %}

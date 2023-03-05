@@ -1,0 +1,17 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conflict</title>  
+        <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h2 style="color:red;">Some apps is conflict, please contact Bear.</h2>
+        <h3>The error message is as follows:</h3>
+        <div id="result" style="margin-left: 50px;">{{ result|safe }}</div>    
+    </body>
+</html>
