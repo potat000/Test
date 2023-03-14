@@ -108,3 +108,4 @@ class Grade(models.Model):
     
 class TestA(models.Model):
     a = models.CharField(max_length=10)
+    b = models.IntegerField()
