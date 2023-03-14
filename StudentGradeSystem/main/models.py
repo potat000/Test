@@ -105,3 +105,6 @@ class Grade(models.Model):
     semester = models.ForeignKey(Semester, on_delete=models.CASCADE, null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     score = models.FloatField(validators=[validateScore])
+    
+class TestA(models.Model):
+    a = models.CharField(max_length=10)
